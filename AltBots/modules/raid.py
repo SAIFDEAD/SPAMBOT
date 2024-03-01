@@ -35,11 +35,11 @@ async def raid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💘✨ .")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
             elif uid == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 🌿✨")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
             elif uid in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💥⚡.")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -98,19 +98,18 @@ async def rraid(e):
             entity = await e.client.get_entity(a.sender_id)
 
         try:
-            user_id = entity.id
-            if user_id in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💘✨ ")
-            elif user_id == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 🌿✨.")
-            elif user_id in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💥⚡.")
+            if uid in ALTRON:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
+            elif uid == OWNER_ID:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
+            elif uid in SUDO_USERS:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт")
             else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
                     REPLY_RAID.append(check)
-                await e.reply("» ᴛʜɪᴋ ʜᴀɪ ʙʜᴀɪ ʙᴏʟɴᴇ ᴅᴏ ᴇs ᴍᴄ ᴋᴏ !! ✅")
+                await e.reply("» ᴛʜɪᴋ ʜᴀɪ ʙʜᴀɪ ʙᴏʟɴᴇ ᴅᴏ ʙᴇᴡᴀᴋᴜғ ᴋᴏ ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -243,14 +242,13 @@ async def craid(e):
             a = await e.get_reply_message()
             entity = await e.client.get_entity(a.sender_id)
             uid = entity.id
-
-        try:
+         try:
             if uid in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💘✨ ")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
             elif uid == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 🌿✨")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
             elif uid in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💥⚡.")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
