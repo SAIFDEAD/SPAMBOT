@@ -21,25 +21,25 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __⚡🇩𝜩Ⓐ︎🇩 ⚡__")
+        altron = await e.reply(f"𝐊𝙸𝙽𝙶 𝙸𝚂 Сσмιиɢ")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"__💘✨ 𝙳𝙴𝙰𝙳 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴 🌺💥__")
+        await altron.edit(f"κʏα нʋκм нαι мɛяɛ [вσƨƨ](https://t.me/SAIF_DICTATOR)")
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X2.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X3.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X4.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X5.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X6.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X7.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X8.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X9.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
-@X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`ʀᴇsᴛᴀʀᴛɪɴɢ 𝙳𝙴𝙰𝙳 ʙᴏᴛ...`")
+        await e.reply(f"` Κιиɢ ϰ ៜραм ៜтσρɛƉ...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __ᴀᴅᴅɪɴɢ ᴅᴇᴀᴅ sᴘᴀᴍ ʙᴏᴛ sᴜᴅᴏ....__")
+        ok = await event.reply(f"𝗔𝙳𝙳𝙸𝙽𝙶 𝚂𝚄𝙳𝙾 𝙱𝙾𝚂𝚂....__")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -113,18 +113,18 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("» ᴛᴀɢ ᴋᴀʀ ᴋᴇ ᴋᴀʀ !!")
+            await ok.edit("𝙿𝙻𝙴𝙰𝚂𝙴 𝚃𝙰𝙶 𝚄𝚂𝙴𝚁 𝚃𝙾 𝙶𝙸𝚅𝙴 𝙻𝙾𝙾𝙳𝚄 !!")
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"ᴛʜɪꜱ ᴜꜱᴇʀ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀ ᴅᴇᴀᴅ sᴘᴀᴍ ʙᴏᴛ ꜱᴜᴅᴏ ᴜꜱᴇʀ !!")
+            await ok.edit(𝚏" 𝙻𝙾𝙾𝙳𝚄 𝙺𝙷𝙰 𝙻𝙸𝚈𝙰 𝙷𝙰𝙸𝙸 ")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ᴡᴀɪᴛ ᴋᴀʀ ʙʜᴀɪ ᴅᴇᴀᴅ ʙᴏᴛ sᴜʀᴜ ʜᴏ ʀʜᴀ ʜᴀɪ...`")
+            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ៜ𝚄𝙳𝙾 Δ𝙳𝙳 ៜ𝚄𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 Κ𝙸𝙽𝙶 I𝚂 С𝙾𝙼𝙸𝙽𝙶.....`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» ꜱᴏʀʀʏ, ᴏɴʟʏ ᴅᴇᴀᴅ ʙᴏᴛ ᴏᴡɴᴇʀ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ✨⚡")
+        await event.reply("ᴋʏᴀᴅᴇ ᴍᴇ ʀʜᴏ ғʏᴅᴇ ᴍᴇ ʀʜᴏɢᴇ ʙᴇᴡᴀᴋᴜғ")
