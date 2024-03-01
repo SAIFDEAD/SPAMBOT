@@ -1,6 +1,6 @@
 {
-    "name": "⚡🇩𝜩Ⓐ︎🇩 ⚡.",
-    "logo": "https://graph.org/file/eb514f6d4b35027f8fe0b.jpg",
+    "name": "˹ Ƙιиɢ  ✘ sραм ˼",
+    "logo": "https://graph.org/file/783ec03ae235961488741.jpg",
     "keywords": [
         "telegram",
         "telethon",
@@ -8,7 +8,7 @@
         "PythonX",
         "SpamBots"
     ],
-    "repository": "https://github.com/SAIFDEAD/AXSPAMBOT",
+    "repository": "https://github.com/SAIFDEAD/SPAMBOT",
     "env": {
       "BOT_TOKEN": {
         "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
