@@ -16,8 +16,6 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 async def leave(e):
     if e.sender_id in OWNER_ID:
-  sudousers = getenv("SUDO_USERS", default=None)
-
         if len(e.text) > 7:
             event = await e.reply("» ʟᴇᴀᴠɪɴɢ ʙᴏss. ..")
             mkl = e.text.split(" ", 1)
