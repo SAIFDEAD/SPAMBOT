@@ -3,20 +3,20 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"⚡🇩𝜩Ⓐ︎🇩 ⚡ 𝗛𝗘𝗟𝗣 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Saif_Dictator**"
+HELP_STRING = f"˹ Ƙιиɢ  ✘ sραм ˼ нɛℓρ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Saif_Dictator**"
 
 HELP_BUTTON = [
     [
-      Button.inline("💥 ꜱᴘᴀᴍ 💥", data="spam"),
-      Button.inline("✨ ʀᴀɪᴅ ✨", data="raid")
+      Button.inline(" Ƨᴘᴀᴍ ", data="spam"),
+      Button.inline("Яᴀɪᴅ ", data="raid")
     ],
     [
-      Button.inline("💖 ᴇxᴛʀᴀ 💖", data="extra"),
-      Button.url("💘 𝙾𝚆𝙽𝙴𝚁 💘", "https://t.me/Saif_Dictator")
+      Button.inline(" Єxᴛʀᴀ ", data="extra"),
+      Button.url(" Ѳ𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
     ],
     [
-      Button.url("🌴 ᴄʜᴀɴɴᴇʟ 🌴", "https://t.me/Dead_SupportChat"),
-      Button.url("🌺 sᴜᴘᴘᴏʀᴛ 🌺", "https://t.me/SAIFHELPGC")
+      Button.url(" Ɔʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
+      Button.url(" Ƨᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFHELPGC")
     ]
   ]
 
@@ -35,7 +35,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/4d811a985dedfe0cb135c.jpg",
+              "https://graph.org/file/e1e1d1eec8d8eff0dbf9f.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -61,7 +61,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**⚡🇩𝜩Ⓐ︎🇩 ⚡**
+**˹ Ƙιиɢ  ✘ sραм ˼**
 """
 
                  
@@ -93,7 +93,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**⚡🇩𝜩Ⓐ︎🇩 ⚡**
+**˹ Ƙιиɢ  ✘ sραм ˼ **
 """
 
 spam_msg = f"""
@@ -110,7 +110,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-**⚡🇩𝜩Ⓐ︎🇩 ⚡**
+**˹ Ƙιиɢ  ✘ sραм ˼**
 """                     
            
            
@@ -130,20 +130,20 @@ async def helpback(event):
             HELP_STRING,
             buttons=[
               [
-                Button.inline("💥 ꜱᴘᴀᴍ 💥", data="spam"),
-                Button.inline("✨ ʀᴀɪᴅ ✨", data="raid")
+                Button.inline(" 𝐒ᴘᴀᴍ ", data="spam"),
+                Button.inline(" 𝐑ᴀɪᴅ ", data="raid")
               ],
               [
-                Button.inline("💖 ᴇxᴛʀᴀ 💖", data="extra"),
-                Button.url("💘 𝙾𝚆𝙽𝙴𝚁 💘", "https://t.me/Saif_Dictator")
+                Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
+                Button.url(" 𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
               ],
                          
-                Button.url("🌺 ᴄʜᴀɴɴᴇʟ 🌺", "https://t.me/DE1DSTORE"),
-                Button.url("🌴 sᴜᴘᴘᴏʀᴛ 🌴", "https://t.me/SAIFHELPGC")
+                Button.url("𝐂ʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
+                Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFHELPGC")
             ],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -162,7 +162,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -181,7 +181,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ  sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -200,4 +200,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
