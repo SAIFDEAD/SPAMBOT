@@ -246,7 +246,7 @@ async def craid(e):
         
          try:
             if uid in ALTRON:
-                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт ")
             elif uid == OWNER_ID:
                 await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
             elif uid in SUDO_USERS:
