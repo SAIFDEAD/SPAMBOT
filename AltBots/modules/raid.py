@@ -242,6 +242,7 @@ async def craid(e):
             a = await e.get_reply_message()
             entity = await e.client.get_entity(a.sender_id)
             uid = entity.id
+
          try:
             if uid in ALTRON:
                 await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
