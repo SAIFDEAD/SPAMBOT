@@ -59,10 +59,10 @@ async def spam(event: events):
                     await event.client.send_message(event.chat_id, message)
                     await asyncio.sleep(0.2)
             else:
-                await event.reply(f"😈 **Usage:**\n  » {hl}spam 13 Dead\n  » {hl}spam 13 <ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ>\n\n**To do spam with replying to a user:**\n  » {hl}spam 13 🇩𝜩Ⓐ︎🇩 <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ>")
+                await event.reply(f"😈 **Usage:**\n  » {hl}spam 13 king op\n  » {hl}spam 13 <ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ>\n\n**To do spam with replying to a user:**\n  » {hl}spam 13 king op <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ>")
 
         except (IndexError, ValueError):
-            await event.reply(f"😈 **Usage:**\n  » {hl}spam 13 Dead\n  » {hl}spam 13 <ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ>\n\n**To do spam with replying to a user:**\n  » {hl}spam 13 🇩𝜩Ⓐ︎🇩 <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ>")
+            await event.reply(f"😈 **Usage:**\n  » {hl}spam 13 king op\n  » {hl}spam 13 <ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ>\n\n**To do spam with replying to a user:**\n  » {hl}spam 13 king op <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ>")
         except Exception as e:
             print(e)
 
@@ -80,8 +80,8 @@ async def spam(event: events):
 async def pspam(event):
     if event.sender_id in SUDO_USERS:
         if event.chat_id in GROUP:
-            await event.reply("» ៜσσяʏ тнιs ιs κιиɢ яɛƨιᴅɛитs")
-            else:
+            await event.reply(" ៜσσяʏ тнιs ιs κιиɢ яɛƨιᴅɛитs.")
+        else:
             try:
                 counter = int(event.text.split(" ", 2)[1])
                 porrn = choice(PORMS)
@@ -108,7 +108,7 @@ async def pspam(event):
 async def hang(e):
     if e.sender_id in SUDO_USERS:
         if e.chat_id in GROUP:
-            await e.reply("ៜσσяʏ тнιƨ ιƨ κιиɢ αяɛα ")
+            await e.reply(" ៜσσяʏ тнιs ιs κιиɢ яɛƨιᴅɛит.")
         else:
             try:
                 counter = int(e.text.split(" ", 2)[1])
