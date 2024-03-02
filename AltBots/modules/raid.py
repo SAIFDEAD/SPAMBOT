@@ -35,11 +35,11 @@ async def raid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт .")
             elif uid == OWNER_ID:
-                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
             elif uid in SUDO_USERS:
-                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -98,18 +98,19 @@ async def rraid(e):
             entity = await e.client.get_entity(a.sender_id)
 
         try:
-            if uid in ALTRON:
+            user_id = entity.id
+            if user_id in ALTRON:
                 await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
-            elif uid == OWNER_ID:
+            elif user_id == OWNER_ID:
                 await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт")
-            elif uid in SUDO_USERS:
+            elif user_id in SUDO_USERS:
                 await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт")
             else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
                     REPLY_RAID.append(check)
-                await e.reply("» ᴛʜɪᴋ ʜᴀɪ ʙʜᴀɪ ʙᴏʟɴᴇ ᴅᴏ ʙᴇᴡᴀᴋᴜғ ᴋᴏ ✅")
+                await e.reply("σκ вσƨƨ ʝʋƨт ƨɛɛ  ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -243,15 +244,22 @@ async def craid(e):
             entity = await e.client.get_entity(a.sender_id)
             uid = entity.id
 
-         try:
-            first_name = entity.first_name
-            counter = int(xraid[1])
-            username = f"[{first_name}](tg://user?id={uid})"
-            for _ in range(counter):
-                reply = choice(CRAID)
-                caption = f"{username} {reply}"
-                await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+        try:
+            if uid in ALTRON:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт ")
+            elif uid == OWNER_ID:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт✨")
+            elif uid in SUDO_USERS:
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт.")
+            else:
+                first_name = entity.first_name
+                counter = int(xraid[1])
+                username = f"[{first_name}](tg://user?id={uid})"
+                for _ in range(counter):
+                    reply = choice(CRAID)
+                    caption = f"{username} {reply}"
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.1)
         except (IndexError, ValueError, NameError):
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐂𝗥𝗮𝗶𝗱\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
