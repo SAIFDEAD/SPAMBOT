@@ -24,7 +24,7 @@ async def ping(e):
         altron = await e.reply(f"𝐊𝙸𝙽𝙶 𝙸𝚂 Сσмιиɢ")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"κʏα нʋκм нαι мɛяɛ [вσƨƨ](https://t.me/SAIF_DICTATOR)")
+        await altron.edit(f"𝐊ʏα 𝐎яᴅɛя 𝐇αι 𝐌ɛяɛ [𝐌αsтɛя](https://t.me/SAIF_DICTATOR)")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sstop(?: |$)(.*)" % hl))
