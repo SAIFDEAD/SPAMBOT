@@ -1,4 +1,4 @@
-from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, OWNER_ID, SUDO_USERS, CMD_HNDLR as hl
+from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, OWNER_ID, CMD_HNDLR as hl
 
 from telethon import events
 from telethon.tl.functions.channels import LeaveChannelRequest
@@ -33,8 +33,3 @@ async def leave(e):
                       await event.client(LeaveChannelRequest(int(e.chat_id)))
                   except Exception as e:
                       await event.edit(str(e))
-
-         
-    elif event.sender_id in SUDO_USERS:
-        await event.reply("ᴀᴜᴋᴋᴀᴛ ᴍᴇ ʀʜᴏ ʙᴇᴡᴀᴋᴜғ")
-       
