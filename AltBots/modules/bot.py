@@ -113,17 +113,17 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("𝙿𝙻𝙴𝙰𝚂𝙴 𝚃𝙰𝙶 𝚄𝚂𝙴𝚁 𝚃𝙾 𝙶𝙸𝚅𝙴 𝙻𝙾𝙾𝙳𝚄 !!")
+            await ok.edit("𝙿𝙻𝙴𝙰𝚂𝙴 𝚃𝙰𝙶 𝚄𝚂𝙴𝚁 𝚃𝙾 𝙹𝙾𝙸𝙽 𝙰𝚁𝙼𝚈 !!")
             return
 
         if str(target) in sudousers:
-            await ok.edit(" 𝙻𝙾𝙾𝙳𝚄 𝙺𝙷𝙰 𝙻𝙸𝚈𝙰 𝙷𝙰𝙸𝙸 ")
+            await ok.edit(" 𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙺𝙸𝙽𝙶 𝚇 𝚂𝙿𝙰𝙼 𝚂𝙾𝙻𝙳𝙸𝙴𝚁")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ៜ𝚄𝙳𝙾 Δ𝙳𝙳 ៜ𝚄𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 Κ𝙸𝙽𝙶 I𝚂 С𝙾𝙼𝙸𝙽𝙶.....`")
+            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `𝚂𝚄𝙳𝙾 𝙰𝙳𝙳 𝚂𝚄𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙺𝙸𝙽𝙶 𝙸𝚂 𝙲𝙾𝙼𝙸𝙽𝙶.....`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
