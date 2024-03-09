@@ -48,7 +48,7 @@ extra_msg = f"""
 
 𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **ᴅᴇᴀᴅ sᴘᴀᴍ ʙᴏᴛ ᴄᴍᴅꜱ**
   1) {hl}ping 
-  2) {hl}reboot
+  2) {hl}stop 
   3) {hl}sudo <reply to user>  --> Owner Cmd
   4) {hl}logs --> Owner Cmd
 
