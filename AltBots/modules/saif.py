@@ -22,10 +22,10 @@ REPLYRAID = []
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssaif(?: |$)(.*)" % hl))
 async def saif(e):
     if e.sender_id in SUDO_USERS:
-        xraid = e.text.split(" ", 2)
+        sdead = e.text.split(" ", 2)
 
-        if len(xraid) == 3:
-            entity = await e.client.get_entity(xraid[2])
+        if len(sdead) == 3:
+            entity = await e.client.get_entity(sdead[2])
             uid = entity.id
 
         elif e.reply_to_msg_id:             
@@ -35,14 +35,14 @@ async def saif(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝚄𝚂𝙴𝚁 𝙸𝚂 𝙵𝙰𝚃𝙷𝙴𝚁 𝙾𝙵 𝙺𝙸𝙽𝙶 .")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт .")
             elif uid == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝚄𝚂𝙴𝚁 𝙸𝚂 𝙺𝙸𝙽𝙶 𝙾𝙵 𝙱𝙾𝚃")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
             elif uid in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝚄𝚂𝙴𝚁 𝙸𝚂 𝚂𝙾𝙻𝙳𝙸𝙴𝚁 𝙾𝙵 𝙺𝙸𝙽𝙶 .")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт.")
             else:
                 first_name = entity.first_name
-                counter = int(xraid[1])
+                counter = int(sdead[1])
                 username = f"[{first_name}](tg://user?id={uid})"
                 for _ in range(counter):
                     reply = choice(REPLYRAID)
@@ -50,6 +50,7 @@ async def saif(e):
                     await e.client.send_message(e.chat_id, caption)
                     await asyncio.sleep(0.0)
         except (IndexError, ValueError, NameError):
-            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐒ᴀɪғ\n  » {hl}sᴀɪғ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}sᴀɪғ <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+            await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐚𝐢𝐝\n  » {hl}saif <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}saif <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
             print(e)
+
