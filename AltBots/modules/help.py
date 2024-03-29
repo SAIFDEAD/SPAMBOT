@@ -3,20 +3,20 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"˹ Ƙιиɢ  ✘ sραм ˼ нɛℓρ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @Saif_Dictator**"
+HELP_STRING = f"˹ Ƙιиɢ  ✘ sραм ˼ нɛℓρ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SAIF_DICTATOR**"
 
 HELP_BUTTON = [
     [
-      Button.inline(" Ƨᴘᴀᴍ ", data="spam"),
-      Button.inline("Яᴀɪᴅ ", data="raid")
+      Button.inline(" 𝐒ᴘᴀᴍ ", data="spam"),
+      Button.inline("𝐑ᴀɪᴅ ", data="raid")
     ],
     [
-      Button.inline(" Єxᴛʀᴀ ", data="extra"),
-      Button.url(" Ѳ𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+      Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
+      Button.url(" 𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
     ],
     [
-      Button.url(" Ɔʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
-      Button.url(" Ƨᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFHELPGC")
+      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
+      Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/DEAD_GRPCHAT")
     ]
   ]
 
@@ -35,7 +35,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/e1e1d1eec8d8eff0dbf9f.jpg",
+              "https://graph.org/file/783ec03ae235961488741.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -139,11 +139,11 @@ async def helpback(event):
               ],
                          
                 Button.url("𝐂ʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
-                Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFHELPGC")
+                Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/DEAD_GRPCHAT")
             ],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -159,10 +159,10 @@ async def helpback(event):
 async def help_spam(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(spam_msg,
-              buttons=[[Button.inline("< Back", data="help_back"),],],
+              buttons=[[Button.inline("𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
               ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -178,10 +178,10 @@ async def help_spam(event):
 async def help_raid(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ  sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ  sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -197,7 +197,7 @@ async def help_raid(event):
 async def help_extra(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
             )
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
