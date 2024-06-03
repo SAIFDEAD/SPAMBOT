@@ -3,20 +3,23 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"˹ Ƙιиɢ  ✘ sραм ˼ нɛℓρ ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @SAIF_DICTATOR**"
+HELP_STRING = f"ᴋɪɴɢ x sᴘᴀᴍ ʙᴏᴛ ʜᴇʟᴘ ᴍᴇɴᴜ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀: @SAIF_DICTATOR**"
 
 HELP_BUTTON = [
     [
-      Button.inline(" 𝐒ᴘᴀᴍ ", data="spam"),
-      Button.inline("𝐑ᴀɪᴅ ", data="raid")
+      Button.inline(" 𝐒ᴘᴀᴍ", data="spam"),
+      Button.inline(" 𝐑ᴀɪᴅ ", data="raid")
     ],
     [
       Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
-      Button.url(" 𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+      Button.url("𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
     ],
     [
-      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
-      Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/DEAD_GRPCHAT")
+      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/BOTSUPPORT_CHAT"),
+      Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+    ],
+    [ 
+      Button.inline(" 𝐊ɪɴɢ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
     ]
   ]
 
@@ -46,11 +49,12 @@ async def help(event):
 extra_msg = f"""
 **» ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:**
 
-𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **ᴅᴇᴀᴅ sᴘᴀᴍ ʙᴏᴛ ᴄᴍᴅꜱ**
+𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **ᴋɪɴɢ xsᴘᴀᴍ ʙᴏᴛ ᴄᴍᴅꜱ**
   1) {hl}ping 
-  2) {hl}stop 
+  2) {hl}stop
   3) {hl}sudo <reply to user>  --> Owner Cmd
   4) {hl}logs --> Owner Cmd
+  5) gali -- One word gali spam
 
 𝗘𝗰𝗵𝗼: **ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ**
   1) {hl}echo <reply to user>
@@ -61,9 +65,42 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**˹ Ƙιиɢ  ✘ sραм ˼**
+**🅚🅘🅝🅖 🅧 🅢🅟🅐🅜  **
 """
 
+
+deadxspam_msg = f"""
+**» ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅs:**
+
+𝗚𝗼𝗼𝗱 𝗔𝗳𝘁𝗲𝗿𝗻𝗼𝗼𝗻: **ᴀғᴛᴇʀ ɴᴏᴏɴ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜsᴇʀ ғᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ**
+  1) {hl}ga <count> <username>
+  2) {hl}ha <count> <reply to user>
+
+𝗘𝗺𝗼𝗷𝗶: **ᴇᴍᴏᴊɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}saif <count> <username>
+  2) {hl}saif <count> <reply to user>
+
+𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴: **ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}gm <count> <username>
+  2) {hl}gm <count> <reply to user>
+
+𝗚𝗼𝗼𝗱 𝗡𝗶𝗴𝗵𝘁: **ɢᴏᴏᴅ ɴɪɢʜᴛ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}gn <count> <username>
+  2) {hl}gn <count> <reply to user>
+
+𝗙𝗹𝗶𝗿𝘁𝗶𝗻𝗴: **ғʟɪʀᴛ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}flirt <count> <username>
+  2) {hl}flirt <count> <reply to user>
+
+𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆: **ʙᴅᴀʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}ᴡɪsʜ <count> <username>
+  2) {hl}ᴡɪsʜ <count> <reply to user>
+
+𝗢𝗻𝗲𝘄𝗼𝗿𝗱𝗚𝗮𝗹𝗶: **ᴏɴᴇ ᴡᴏʀᴅ ɢᴀʟɪ ᴛᴏ ɢᴀɴᴅᴜ ᴜsᴇʀ**
+  1) {hl}gali <count> <reply to user>
+
+**🅚🅘🅝🅖 🅧 🅢🅟🅐🅜**
+"""
                  
 raid_msg = f"""
 **» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
@@ -93,7 +130,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**˹ Ƙιиɢ  ✘ sραм ˼ **
+**🅚🅘🅝🅖 🅧 🅢🅟🅐🅜**
 """
 
 spam_msg = f"""
@@ -110,7 +147,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-**˹ Ƙιиɢ  ✘ sραм ˼**
+**🅚🅘🅝🅖 🅧 🅢🅟🅐🅜**
 """                     
            
            
@@ -137,13 +174,17 @@ async def helpback(event):
                 Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
                 Button.url(" 𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
               ],
-                         
-                Button.url("𝐂ʜᴀɴɴᴇʟ ", "https://t.me/SAIFALLBOT"),
-                Button.url(" 𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/DEAD_GRPCHAT")
+              [          
+                Button.url("𝐂ʜᴀɴɴᴇʟ ", "https://t.me/BOTSUPPORT_CHAT"),
+                Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
             ],
+            [
+                Button.inline(" 𝐊ɪɴɢ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
+            ],
+           ]
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -159,10 +200,10 @@ async def helpback(event):
 async def help_spam(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(spam_msg,
-              buttons=[[Button.inline("𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
-              ) 
+            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="help_back"),],],
+       ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -178,10 +219,10 @@ async def help_spam(event):
 async def help_raid(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
-            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
+            buttons=[[Button.inline("𝐁ᴀᴄᴋ", data="help_back"),],],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ  sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -197,7 +238,26 @@ async def help_raid(event):
 async def help_extra(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
-            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
+            buttons=[[Button.inline("𝐁ᴀᴄᴋ", data="help_back"),],],
             )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+
+
+@X1.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X2.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X3.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X4.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X5.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X6.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X7.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X8.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X9.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X10.on(events.CallbackQuery(pattern=r"deadxspam"))
+async def help_deadxspam(event):
+    if event.query.user_id in SUDO_USERS:    
+        await event.edit(deadxspam_msg,
+            buttons=[[Button.inline("𝐁ᴀᴄᴋ", data="help_back"),],],
+       ) 
+    else:
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴋɪɴɢ x sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
