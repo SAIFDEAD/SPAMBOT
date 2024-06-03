@@ -30,11 +30,11 @@ async def hraid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴏғ ᴅᴇᴀᴅ ʙᴏᴛ")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ κιиɢ σғ тнɛ вσт .")
             elif uid == OWNER_ID:
-                await e.reply("ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴅᴇᴀᴅ x")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ ғαтнɛя σғ тнɛ вσт")
             elif uid in SUDO_USERS:
-                await e.reply("ɴᴏ, ᴛʜɪs ɢᴜʏ ɪs ᴅᴇᴀᴅ x sᴜᴅᴏ ᴜsᴇʀ")
+                await e.reply("𝐍σ тнιѕ ʋѕɛя ιѕ 𝐒σʟᴅιɛя σғ тнɛ вσт.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
